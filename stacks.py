@@ -77,7 +77,7 @@ if __name__ == '__main__':
         while heep[0][0] == t:
             print( "Watch out!" )
             _, j = heepop( heep )
-            depot.stacks[j].pop()
+            depot.popping( j )
         print( depot.stacks )
 
 ########################################################
