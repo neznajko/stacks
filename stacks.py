@@ -72,8 +72,8 @@ if __name__ == '__main__':
         j, m = depot.insert( r )
         if j == -1:
             print( "depot full" )
-            continue
-        heepush( heep, ( r, j ))
+        else:
+            heepush( heep, ( r, j ))
         while heep[0][0] == t:
             print( "Watch out!" )
             _, j = heepop( heep )
